@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>
+  
+  <!--STAGING:-->
+  <script src="https://assets.adobedtm.com/50164577268f481934e5d57dbfb78f929164cd0d/satelliteLib-ea775cfabef5fca8b04e9392f20c986c0724a7c3-staging.js"></script>
+  <!--Production:-->
+  <script src="https://assets.adobedtm.com/50164577268f481934e5d57dbfb78f929164cd0d/satelliteLib-ea775cfabef5fca8b04e9392f20c986c0724a7c3.js"></script>
+    <title>2.1.1. Reference Architecture</title>
+  
+
+  <meta charset="utf-8">
+  <!-- Twitter Bootstrap viewport setting -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- F5 metadata -->
+  <meta name="kb_doc_type" content="Manual"/>
+  <meta name="kb_doc_type" content="User Guide"/>
+  <meta name="title" content="2.1.1. Reference Architecture"/>
+  <meta name="product" content="Public Cloud Architectures: Deploying F5 BIG-IP Virtual Edition on Google Cloud Platform"/>
+  <meta name="version" content=""/>
+  <meta name="updated_date"  content="None"/>
+  <meta name="archived" content="Archived documents excluded"/>
+
+  
+  
+  
+  <link href="https://cdn.f5.com/favicon.ico" rel="icon">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text"> jQuery.noConflict(true)</script>
+
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>2.1.1. Reference Architecture &#8212; Public Cloud Architectures: Deploying F5 BIG-IP Virtual Edition on Google Cloud Platform  documentation</title>
+    <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5_agility_theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/21fb8a09c3.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.1.2. Hands-on Labs" href="lab2.html" />
+    <link rel="prev" title="2.1. F5 in Google Cloud Platform" href="module1.html" />
+  </head><body>
+  <div id="clouddocs-header"></div>
+
+    <div id="dismiss">
+      <button type="button" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>
+    </div>
+    <div id="sidebar" class="section-nav">
+      <nav class="nav-sidebartoc">
+        <h5>Public Cloud Architectures: Deploying F5 BIG-IP Virtual Edition on Google Cloud Platform  documentation </h5>
+<div id="searchbox" role="search">
+  <form class="search" action="../../search.html" method="get">
+    <input type="text" class="search" name="q" placeholder=" Search..." />
+    <button type="submit" class="btn btn-info navbar-btn"><i class="fa fa-search"></i></button>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        <hr>
+        <h5>Current Page</h5>
+        <span class="nav-sidebartoc">
+            <ul>
+<li><a class="reference internal" href="#">2.1.1. Reference Architecture</a><ul>
+<li><a class="reference internal" href="#lab-topology">2.1.1.1. Lab Topology</a></li>
+</ul>
+</li>
+</ul>
+
+         </span>
+        <hr>
+        <h5>Site Contents</h5>
+        <span class="nav-sidebartoc">
+            <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">1. Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../class1.html">2. Class - Public Cloud Architectures: Deploying F5 BIG-IP Virtual Edition on Google Cloud Platform</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="module1.html">2.1. F5 in Google Cloud Platform</a></li>
+</ul>
+</li>
+</ul>
+
+        </span><!-- Use this file to add extra links to the bottom of the ToC sidebar -->
+<hr>
+  <span class="nav-sidebartoc">
+ <!-- insert content here -->
+  </span>
+      </nav>
+    </div>
+
+  
+  <div class="main active" id="content">
+    <article class="docs-container site-article-inner">
+            <nav class="site-breadcrumb-nav site-nav">
+          <ul class="site-breadcrumb-list">
+            <li class="breadcrumb-item"><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>&#x20 <a href="/">Community Training Classes &amp; Labs</a> &gt; <a href="../../index.html">Public Cloud Architectures: Deploying F5 BIG-IP Virtual Edition on Google Cloud Platform </a> &gt; 2.1.1. Reference Architecture</li>
+          </ul>
+      </nav>
+      
+      
+
+    
+  <div class="section" id="reference-architecture">
+<h1>2.1.1. Reference Architecture<a class="headerlink" href="#reference-architecture" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../../_images/image1.png"><img alt="../../_images/image1.png" src="../../_images/image1.png" style="width: 836.0px; height: 265.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/image2.png"><img alt="../../_images/image2.png" src="../../_images/image2.png" style="width: 900.0px; height: 368.0px;" /></a>
+<div class="section" id="lab-topology">
+<h2>2.1.1.1. Lab Topology<a class="headerlink" href="#lab-topology" title="Permalink to this headline">¶</a></h2>
+<p>We use a simplified version of the above reference architecture, with one forwarding rule:
+35.230.18.56 =&gt; target pool of two 3-NIC F5 BIG-IPs.
+(We’ll also deploy 1-NIC F5 BIG-IP via deployment templates in a lab exercise at the end of this document)</p>
+<p>Connect to <a class="reference external" href="https://console.cloud.google.com/">https://console.cloud.google.com/</a> as <a class="reference external" href="mailto:gcpreadonly&#37;&#52;&#48;gmail&#46;com">gcpreadonly<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<p>Select the project as shown below</p>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" src="../../_images/image3.png" style="width: 531.0px; height: 355.0px;" /></a>
+<p>Search “load balancing” and select “Load balancing Network services” as shown below.</p>
+<a class="reference internal image-reference" href="../../_images/image4.png"><img alt="../../_images/image4.png" src="../../_images/image4.png" style="width: 751.0px; height: 133.0px;" /></a>
+<p>Click on “advanced menu” at the bottom of the screen.</p>
+<a class="reference internal image-reference" href="../../_images/image5.png"><img alt="../../_images/image5.png" src="../../_images/image5.png" style="width: 772.0px; height: 364.0px;" /></a>
+<p>Click on “Forwarding rules” and click on the “fixed” forwarding rule.</p>
+<a class="reference internal image-reference" href="../../_images/image6.png"><img alt="../../_images/image6.png" src="../../_images/image6.png" style="width: 1111.0px; height: 559.0px;" /></a>
+<p>This is our forwarding rule (see below):  HTTP traffic to 35.230.18.56 is forwarded to a target pool of F5 BIG-IPs.</p>
+<a class="reference internal image-reference" href="../../_images/image7.png"><img alt="../../_images/image7.png" src="../../_images/image7.png" style="width: 506.0px; height: 447.0px;" /></a>
+<p>Click on the target pool  “fixed” in the above screen to check it contains 2 F5 BIG-IPs.</p>
+<p>Note that the target pool references the F5 BIG-IP using their instances names (not their IP addresses).</p>
+<p>Note the names of the two F5 BIG-IP instances under “VM instances”</p>
+<a class="reference internal image-reference" href="../../_images/image8.png"><img alt="../../_images/image8.png" src="../../_images/image8.png" style="width: 473.0px; height: 457.0px;" /></a>
+<p>Search “compute engine instances” and select “Instances - Compute Engine” as shown below.</p>
+<a class="reference internal image-reference" href="../../_images/image9.png"><img alt="../../_images/image9.png" src="../../_images/image9.png" style="width: 806.0px; height: 127.0px;" /></a>
+<p>Filter by “fixed” as shown below to get to our two F5 BIG-IP instances.</p>
+<a class="reference internal image-reference" href="../../_images/image10.png"><img alt="../../_images/image10.png" src="../../_images/image10.png" style="width: 979.0px; height: 304.0px;" /></a>
+<p>Click on each of the F5 BIG-IP instances above.  Check “Network interfaces” at bottom of the screen.</p>
+<p>For the first F5 BIG-IP:</p>
+<a class="reference internal image-reference" href="../../_images/image11.png"><img alt="../../_images/image11.png" src="../../_images/image11.png" style="width: 701.0px; height: 134.0px;" /></a>
+<p>For the second F5 BIG-IP:</p>
+<a class="reference internal image-reference" href="../../_images/image12.png"><img alt="../../_images/image12.png" src="../../_images/image12.png" style="width: 701.0px; height: 132.0px;" /></a>
+<p>Connect to the F5 BIG-IP management interfaces (Note that the management interface is the last NIC in the screenshots above).</p>
+<p>So, connect to <a class="reference external" href="https://35.230.52.52">https://35.230.52.52</a> and <a class="reference external" href="https://35.233.136.151">https://35.233.136.151</a></p>
+<p>Note that both F5 BIG-IPs in the target pool have a virtual server listening to the GCP public IP used by our forwarding rule.</p>
+<a class="reference internal image-reference" href="../../_images/image13.png"><img alt="../../_images/image13.png" src="../../_images/image13.png" style="width: 506.0px; height: 447.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/image14.png"><img alt="../../_images/image14.png" src="../../_images/image14.png" style="width: 742.0px; height: 487.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/image15.png"><img alt="../../_images/image15.png" src="../../_images/image15.png" style="width: 740.0px; height: 483.0px;" /></a>
+</div>
+</div>
+
+
+
+    
+     <div class="row next-prev-btn-row">
+       <div class="col-lg-12">
+       
+        <a href="module1.html" title="2.1. F5 in Google Cloud Platform" accesskey="p" class="btn btn-primary pull-left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
+       
+       
+          <a href="lab2.html" title="2.1.2. Hands-on Labs" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+       
+     </div>
+     </div>
+    
+
+    </article>
+  </div>
+
+</div>
+
+
+  <div id="clouddocs-footer"></div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../../_static/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    jQuery.noConflict(true)
+  </script>
+  <script src="../../_static/js/clouddocs.js"></script>
+  </body>
+</html>

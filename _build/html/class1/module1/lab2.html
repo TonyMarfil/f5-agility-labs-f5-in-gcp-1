@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<head>
+  
+  <!--STAGING:-->
+  <script src="https://assets.adobedtm.com/50164577268f481934e5d57dbfb78f929164cd0d/satelliteLib-ea775cfabef5fca8b04e9392f20c986c0724a7c3-staging.js"></script>
+  <!--Production:-->
+  <script src="https://assets.adobedtm.com/50164577268f481934e5d57dbfb78f929164cd0d/satelliteLib-ea775cfabef5fca8b04e9392f20c986c0724a7c3.js"></script>
+    <title>2.1.2. Hands-on Labs</title>
+  
+
+  <meta charset="utf-8">
+  <!-- Twitter Bootstrap viewport setting -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- F5 metadata -->
+  <meta name="kb_doc_type" content="Manual"/>
+  <meta name="kb_doc_type" content="User Guide"/>
+  <meta name="title" content="2.1.2. Hands-on Labs"/>
+  <meta name="product" content="Public Cloud Architectures: Deploying F5 BIG-IP Virtual Edition on Google Cloud Platform"/>
+  <meta name="version" content=""/>
+  <meta name="updated_date"  content="None"/>
+  <meta name="archived" content="Archived documents excluded"/>
+
+  
+  
+  
+  <link href="https://cdn.f5.com/favicon.ico" rel="icon">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text"> jQuery.noConflict(true)</script>
+
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>2.1.2. Hands-on Labs &#8212; Public Cloud Architectures: Deploying F5 BIG-IP Virtual Edition on Google Cloud Platform  documentation</title>
+    <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5_agility_theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/f5-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/21fb8a09c3.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.1.3. To Do" href="lab3.html" />
+    <link rel="prev" title="2.1.1. Reference Architecture" href="lab1.html" />
+  </head><body>
+  <div id="clouddocs-header"></div>
+
+    <div id="dismiss">
+      <button type="button" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>
+    </div>
+    <div id="sidebar" class="section-nav">
+      <nav class="nav-sidebartoc">
+        <h5>Public Cloud Architectures: Deploying F5 BIG-IP Virtual Edition on Google Cloud Platform  documentation </h5>
+<div id="searchbox" role="search">
+  <form class="search" action="../../search.html" method="get">
+    <input type="text" class="search" name="q" placeholder=" Search..." />
+    <button type="submit" class="btn btn-info navbar-btn"><i class="fa fa-search"></i></button>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        <hr>
+        <h5>Current Page</h5>
+        <span class="nav-sidebartoc">
+            <ul>
+<li><a class="reference internal" href="#">2.1.2. Hands-on Labs</a><ul>
+<li><a class="reference internal" href="#lab-1-deploy-3-nic-f5-big-ip-using-deployment-templates">2.1.2.1. Lab 1. Deploy 3-NIC F5 BIG-IP using deployment templates</a></li>
+</ul>
+</li>
+</ul>
+
+         </span>
+        <hr>
+        <h5>Site Contents</h5>
+        <span class="nav-sidebartoc">
+            <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">1. Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../class1.html">2. Class - Public Cloud Architectures: Deploying F5 BIG-IP Virtual Edition on Google Cloud Platform</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="module1.html">2.1. F5 in Google Cloud Platform</a></li>
+</ul>
+</li>
+</ul>
+
+        </span><!-- Use this file to add extra links to the bottom of the ToC sidebar -->
+<hr>
+  <span class="nav-sidebartoc">
+ <!-- insert content here -->
+  </span>
+      </nav>
+    </div>
+
+  
+  <div class="main active" id="content">
+    <article class="docs-container site-article-inner">
+            <nav class="site-breadcrumb-nav site-nav">
+          <ul class="site-breadcrumb-list">
+            <li class="breadcrumb-item"><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>&#x20 <a href="/">Community Training Classes &amp; Labs</a> &gt; <a href="../../index.html">Public Cloud Architectures: Deploying F5 BIG-IP Virtual Edition on Google Cloud Platform </a> &gt; 2.1.2. Hands-on Labs</li>
+          </ul>
+      </nav>
+      
+      
+
+    
+  <div class="section" id="hands-on-labs">
+<h1>2.1.2. Hands-on Labs<a class="headerlink" href="#hands-on-labs" title="Permalink to this headline">¶</a></h1>
+<p>Google deployment templates used to deploy the F5 BIG-IPs
+<a class="reference external" href="https://bit.ly/2LDV0Nw">https://bit.ly/2LDV0Nw</a></p>
+<p>Replace X with the number provided to you by the proctor</p>
+<p>Connect as ssh -i userX userX&#64;&lt;instance-X&gt;
+(&lt;instance-X is an IP address that will be provided to you by the proctor; each student will get his/her own IP address)</p>
+<div class="section" id="lab-1-deploy-3-nic-f5-big-ip-using-deployment-templates">
+<h2>2.1.2.1. Lab 1. Deploy 3-NIC F5 BIG-IP using deployment templates<a class="headerlink" href="#lab-1-deploy-3-nic-f5-big-ip-using-deployment-templates" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -L https://bit.ly/2wwDu8i -o lab_f5_gdm_template.zip
+unzip lab_f5_gdm_template.zip
+nano f5-existing-stack-byol-3nic-changedmgmt-bigip.yaml
+</pre></div>
+</div>
+<p>…and replace the license with the one provided by the proctor.</p>
+<p>Replace X with the number provided to you by the proctor:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gcloud deployment-manager deployments create bigipuserXlab --config f5-existing-stack-byol-3nic-changedmgmt-bigip.yaml
+</pre></div>
+</div>
+<p>Example for user 35</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user35@instance-35:~$ gcloud deployment-manager deployments create bigipuser35lab --config f5-existing-stack-byol-3nic-changedmgmt-bigip.yaml
+</pre></div>
+</div>
+<p>If you get an error saying that the deployment already exists , you just need to change the deployment name (“bigipuser35lab” in the example above).</p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">Please just keep “bigipuserX” (replace X with the number assigned to you by the proctor) as part of the name so that we can quickly identify your instances.</p>
+</div>
+<p>After 2 minutes or so, search “compute engine instances” and select “Instances – Compute Engine” as shown below.</p>
+<a class="reference internal image-reference" href="../../_images/image16.png"><img alt="../../_images/image16.png" src="../../_images/image16.png" style="width: 812.0px; height: 137.0px;" /></a>
+<p>Filter by “userX” to find your 3-NIC F5 BIG-IP instance.</p>
+<p>Example for user 35:</p>
+<a class="reference internal image-reference" href="../../_images/image17.png"><img alt="../../_images/image17.png" src="../../_images/image17.png" style="width: 613.0px; height: 272.0px;" /></a>
+<p>Click on the instance name (“bigipuser35lab” in the example above) to find the F5 BIG-IP’s management IP.</p>
+<a class="reference internal image-reference" href="../../_images/image18.png"><img alt="../../_images/image18.png" src="../../_images/image18.png" style="width: 802.0px; height: 765.0px;" /></a>
+<p>Write down the management IP of your 3-NIC F5 BIG-IP (screenshot above).</p>
+<p>You can now connect to F5 BIG-IP management GUI using https:&lt;F5 BIG-IP’s public IP in GCP&gt; as admin. The password is the one set by the Google deployment template.</p>
+<a class="reference internal image-reference" href="../../_images/image19.png"><img alt="../../_images/image19.png" src="../../_images/image19.png" style="width: 630.0px; height: 376.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/image20.png"><img alt="../../_images/image20.png" src="../../_images/image20.png" style="width: 580.0px; height: 156.0px;" /></a>
+<p>Short procedure to deploy F5 active/active and active/standby
+(not part of the hands-on labs)</p>
+<ol class="arabic simple">
+<li>Deploy 2 F5 BIG-IP using Google deployment templates</li>
+</ol>
+<blockquote>
+<div><p>1a. Download the Google deployment templates</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -L https://bit.ly/2wwDu8i -o lab_f5_gdm_template.zip
+unzip lab_f5_gdm_template.zip
+</pre></div>
+</div>
+<p>1b. Edit f5-existing-stack-byol-3nic-changedmgmt-bigip.yaml to fit your environment</p>
+<p>1c. Deploy two F5 BIG-IPs</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gcloud deployment-manager deployments create marcactive1 --config f5-existing-stack-byol-3nic-changedmgmt-bigip.yaml
+gcloud deployment-manager deployments create marcactive2 --config f5-existing-stack-byol-3nic-changedmgmt-bigip.yaml
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Get the F5 BIG-IPs’ IP addresses</li>
+</ol>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gcloud compute instances list --filter<span class="o">=</span><span class="s2">&quot;NAME~.*marcactive*&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>NAME         ZONE        MACHINE_TYPE   PREEMPTIBLE  INTERNAL_IP                       EXTERNAL_IP                                 STATUS
+marcactive1  us-west1-a  n1-standard-4               <span class="m">10</span>.10.1.17,10.10.3.26,10.10.2.12  <span class="m">35</span>.197.61.85,35.233.218.10,35.203.135.211   RUNNING
+marcactive2  us-west1-a  n1-standard-4               <span class="m">10</span>.10.1.18,10.10.3.27,10.10.2.13  <span class="m">35</span>.227.174.29,35.227.157.60,104.198.105.51  RUNNING
+</pre></div>
+</div>
+</div></blockquote>
+<p>The Google deployment template we used above creates F5 BIG-IPs with NICs in the following order: external, internal and management. So, 10.10.1.x is F5 BIG-IP external, 10.10.3.x is F5 BIG-IP internal, 10.10.2.x is F5 BIG-IP management</p>
+<ol class="arabic" start="3">
+<li><p class="first">Connect to and configure the first F5 BIG-IP</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh -i &lt;private key&gt; admin@35.203.135.211
+bash
+SOAPLicenseClient --basekey &lt;license key&gt;
+</pre></div>
+</div>
+</li>
+</ol>
+<p>At this point, you should see: [<a class="reference external" href="mailto:admin&#37;&#52;&#48;marcactive1">admin<span>&#64;</span>marcactive1</a>:Active:Standalone] ~ #</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh mv cm device bigip1 marcactive1.example.com
+tmsh modify sys global-settings hostname marcactive1.example.com
+tmsh modify cm device marcactive1.example.com configsync-ip <span class="m">10</span>.10.3.26
+tmsh modify /net self self_internal allow-service all
+tmsh save sys config
+</pre></div>
+</div>
+</div></blockquote>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">In a prod env, “allow custom” specifying just the ports you need would be best. These ports are shown at <a class="reference external" href="https://support.f5.com/csp/article/K13946">https://support.f5.com/csp/article/K13946</a></p>
+</div>
+<p>Extract:</p>
+<p>Device group members should be able to communicate over ports 443, 4353, 1026 (UDP), and 22 (recommended).
+BIG-IP ASM requires the following additional Policy Sync TCP ports: 6123-6128.
+6699 is also for communication channel between peers.</p>
+<ol class="arabic simple" start="4">
+<li>Connect to and configure the second F5 BIG-IP</li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh -i &lt;private key&gt; admin@104.198.105.51
+bash
+SOAPLicenseClient --basekey &lt;license key&gt;
+
+
+At this point, you should see: <span class="o">[</span>admin@marcactive2:Active:Standalone<span class="o">]</span> ~ <span class="c1">#</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh mv cm device bigip1 marcactive2.example.com
+tmsh modify sys global-settings hostname marcactive2.example.com
+tmsh modify cm device marcactive2.example.com configsync-ip <span class="m">10</span>.10.3.27
+tmsh modify /net self self_internal allow-service all
+tmsh save sys config
+</pre></div>
+</div>
+<ol class="arabic" start="5">
+<li><p class="first">Create the trust domain</p>
+<p>On the first F5 BIG-IP:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh modify cm trust-domain /Common/Root add-device <span class="o">{</span> device-ip <span class="m">10</span>.10.2.13 device-name marcactive2.example.com username admin password &lt;password&gt; ca-device <span class="nb">true</span> <span class="o">}</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">Escape any special characters in the password.</p>
+</div>
+<p>At this point, you should see:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>admin@marcactive1:Active:In Sync <span class="o">(</span>Trust Domain Only<span class="o">)]</span> ~ <span class="c1">#</span>
+<span class="o">[</span>admin@marcactive2:Active:In Sync <span class="o">(</span>Trust Domain Only<span class="o">)]</span> ~ <span class="c1">#</span>
+</pre></div>
+</div>
+<p>NOTE:
+We use the BIG-IP management IP to create the trust domain (10.10.2.x in this example).
+The actual communication for failover and configsync uses the BIG-IP internal IP (10.10.3.x in this example).</p>
+<ol class="arabic simple" start="6">
+<li>Create the device group</li>
+</ol>
+<p>On the first F5 BIG-IP:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh create  cm device-group MarcSyncFailover devices add <span class="o">{</span> marcactive1.example.com marcactive2.example.com <span class="o">}</span> <span class="nb">type</span> sync-failover save-on-auto-sync <span class="nb">true</span>
+</pre></div>
+</div>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">The above command create a device group of type “sync-failover” as expected but doesn’t seem to set “sync type” = “automatic with incremental sync”. You can do this from the Configuration utility, navigate to Device Management &gt; Device Groups, select the device group from the list, and change the Sync Type setting to Automatic with Incremental Sync).</p>
+</div>
+<p>At this point, you should see:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>admin@marcactive1:Active:Awaiting Initial Sync<span class="o">]</span> ~ <span class="c1">#</span>
+<span class="o">[</span>admin@marcactive2:Active:Awaiting Initial Sync<span class="o">]</span> ~ <span class="c1">#</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="7">
+<li>Start the initial sync</li>
+</ol>
+<p>On the first F5 BIG-IP:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh run cm config-sync to-group MarcSyncFailover
+</pre></div>
+</div>
+<ol class="arabic simple" start="8">
+<li>On both F5 BIG-IP, run</li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh save sys config
+</pre></div>
+</div>
+<p>At this point, you should see:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>admin@marcactive1:Active:In Sync<span class="o">]</span> ~ <span class="c1">#</span>
+<span class="o">[</span>admin@marcactive2:Active:In Sync<span class="o">]</span> ~ <span class="c1">#</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li>If you want to make this cluster active/standby :</li>
+</ol>
+<blockquote>
+<div>On the first F5 BIG-IP:</div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh modify /cm device marcactive1.example.com unicast-address <span class="o">{{</span> ip <span class="m">10</span>.10.3.26 <span class="o">}}</span>
+tmsh modify /cm device marcactive2.example.com unicast-address <span class="o">{{</span> ip <span class="m">10</span>.10.3.27 <span class="o">}}</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="10">
+<li>If you want to make this cluster active/active again</li>
+</ol>
+<p>On the first F5 BIG-IP:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh modify /cm device marcactive1.example.com unicast-address none
+</pre></div>
+</div>
+</div></blockquote>
+<p>On the second F5 BIG-IP:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh modify /cm device marcactive2.example.com unicast-address none
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+
+    
+     <div class="row next-prev-btn-row">
+       <div class="col-lg-12">
+       
+        <a href="lab1.html" title="2.1.1. Reference Architecture" accesskey="p" class="btn btn-primary pull-left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
+       
+       
+          <a href="lab3.html" title="2.1.3. To Do" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+       
+     </div>
+     </div>
+    
+
+    </article>
+  </div>
+
+</div>
+
+
+  <div id="clouddocs-footer"></div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../../_static/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    jQuery.noConflict(true)
+  </script>
+  <script src="../../_static/js/clouddocs.js"></script>
+  </body>
+</html>
