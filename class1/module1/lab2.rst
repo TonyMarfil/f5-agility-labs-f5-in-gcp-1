@@ -147,7 +147,7 @@ BIG-IP ASM requires the following additional Policy Sync TCP ports: 6123-6128.
    SOAPLicenseClient --basekey <license key>
 
    
-   At this point, you should see: [admin@marcactive2:Active:Standalone] ~ #
+At this point, you should see: [admin@marcactive2:Active:Standalone] ~ #
  
 .. code-block:: bash
 
@@ -183,7 +183,7 @@ The actual communication for failover and configsync uses the BIG-IP internal IP
  
 6. Create the device group
 
-On the first F5 BIG-IP:
+   On the first F5 BIG-IP:
 
 .. code-block:: bash
 
@@ -205,7 +205,7 @@ At this point, you should see:
  
 7. Start the initial sync
 
-On the first F5 BIG-IP:
+   On the first F5 BIG-IP:
 
 
 .. code-block:: bash
@@ -229,7 +229,7 @@ At this point, you should see:
  
 9. If you want to make this cluster active/standby :
 
- On the first F5 BIG-IP:
+   On the first F5 BIG-IP:
 
 .. code-block:: bash
 

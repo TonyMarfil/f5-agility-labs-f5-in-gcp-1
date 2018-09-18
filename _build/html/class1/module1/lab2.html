@@ -218,11 +218,9 @@ BIG-IP ASM requires the following additional Policy Sync TCP ports: 6123-6128.
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh -i &lt;private key&gt; admin@104.198.105.51
 bash
 SOAPLicenseClient --basekey &lt;license key&gt;
-
-
-At this point, you should see: <span class="o">[</span>admin@marcactive2:Active:Standalone<span class="o">]</span> ~ <span class="c1">#</span>
 </pre></div>
 </div>
+<p>At this point, you should see: [<a class="reference external" href="mailto:admin&#37;&#52;&#48;marcactive2">admin<span>&#64;</span>marcactive2</a>:Active:Standalone] ~ #</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh mv cm device bigip1 marcactive2.example.com
 tmsh modify sys global-settings hostname marcactive2.example.com
 tmsh modify cm device marcactive2.example.com configsync-ip <span class="m">10</span>.10.3.27
@@ -250,10 +248,11 @@ tmsh save sys config
 <p>NOTE:
 We use the BIG-IP management IP to create the trust domain (10.10.2.x in this example).
 The actual communication for failover and configsync uses the BIG-IP internal IP (10.10.3.x in this example).</p>
-<ol class="arabic simple" start="6">
-<li>Create the device group</li>
-</ol>
+<ol class="arabic" start="6">
+<li><p class="first">Create the device group</p>
 <p>On the first F5 BIG-IP:</p>
+</li>
+</ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh create  cm device-group MarcSyncFailover devices add <span class="o">{</span> marcactive1.example.com marcactive2.example.com <span class="o">}</span> <span class="nb">type</span> sync-failover save-on-auto-sync <span class="nb">true</span>
 </pre></div>
 </div>
@@ -266,10 +265,11 @@ The actual communication for failover and configsync uses the BIG-IP internal IP
 <span class="o">[</span>admin@marcactive2:Active:Awaiting Initial Sync<span class="o">]</span> ~ <span class="c1">#</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="7">
-<li>Start the initial sync</li>
-</ol>
+<ol class="arabic" start="7">
+<li><p class="first">Start the initial sync</p>
 <p>On the first F5 BIG-IP:</p>
+</li>
+</ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh run cm config-sync to-group MarcSyncFailover
 </pre></div>
 </div>
@@ -286,11 +286,11 @@ The actual communication for failover and configsync uses the BIG-IP internal IP
 </pre></div>
 </div>
 </div></blockquote>
-<ol class="arabic simple" start="9">
-<li>If you want to make this cluster active/standby :</li>
+<ol class="arabic" start="9">
+<li><p class="first">If you want to make this cluster active/standby :</p>
+<p>On the first F5 BIG-IP:</p>
+</li>
 </ol>
-<blockquote>
-<div>On the first F5 BIG-IP:</div></blockquote>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tmsh modify /cm device marcactive1.example.com unicast-address <span class="o">{{</span> ip <span class="m">10</span>.10.3.26 <span class="o">}}</span>
 tmsh modify /cm device marcactive2.example.com unicast-address <span class="o">{{</span> ip <span class="m">10</span>.10.3.27 <span class="o">}}</span>
 </pre></div>
