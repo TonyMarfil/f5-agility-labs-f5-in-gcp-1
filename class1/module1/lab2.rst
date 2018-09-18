@@ -146,7 +146,7 @@ BIG-IP ASM requires the following additional Policy Sync TCP ports: 6123-6128.
    bash
    SOAPLicenseClient --basekey <license key>
 
-   
+ 
 At this point, you should see: [admin@marcactive2:Active:Standalone] ~ #
  
 .. code-block:: bash
